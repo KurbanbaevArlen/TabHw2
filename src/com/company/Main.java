@@ -102,36 +102,7 @@ public class Main {
             System.out.println(e.getMessage());
         }
     }
-    private static String readLineCar(){
-        StringBuilder json = new StringBuilder();
-        try {
-            FileReader fileReader = new FileReader(String.valueOf(WRITE_CAR));
-            int a;
-            while ((a = fileReader.read()) != -1){
-                json.append((char) a);
-            }
 
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-        return json.toString();
-
-    }
-    private static String readLineDriver(){
-        StringBuilder json = new StringBuilder();
-        try {
-            FileReader fileReader = new FileReader(String.valueOf(WRITE_DRIVER));
-            int a;
-            while ((a = fileReader.read()) != -1){
-                json.append((char) a);
-            }
-
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-        return json.toString();
-
-    }
     public static void printCar(List<Car> trucks ){
         System.out.println("------------------------Trucks--------------------------");
         System.out.println("    # | Bus               | Driver            | State        ");
